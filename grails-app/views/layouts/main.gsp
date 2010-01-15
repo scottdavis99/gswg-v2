@@ -10,7 +10,11 @@
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="Spinner" />
         </div>
+        <!-- bye bye, logo
         <div id="grailsLogo" class="logo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'grails_logo.png')}" alt="Grails" border="0" /></a></div>
+        -->
+        <g:render template="/layouts/header" />         
         <g:layoutBody />
+        <g:render template="/layouts/footer" />
     </body>
 </html>
