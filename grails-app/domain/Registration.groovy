@@ -1,14 +1,13 @@
-class Registration {
-  String name
-  Date dateOfBirth
-  String gender
-  String address
-  String city
-  String state
-  String zipcode
-  String email
-  Date dateCreated
-  
-  static constraints = {
-  }
-}
+class Registration {   
+  static constraints = { 
+    race() 
+    runner() 
+    paid() 
+    dateCreated() 
+  } 
+   
+  static belongsTo = [race:Race, runner:Runner] 
+ 
+  Boolean paid 
+  Date dateCreated 
+} 
