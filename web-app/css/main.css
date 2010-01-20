@@ -298,7 +298,20 @@ a.header-main:link, a.header-main:visited {
   float: right; 
   color: #fff; 
 } 
- 
 #loginHeader a{ 
   color: #fff; 
 }
+#search { 
+  float: right; 
+  margin: 2em 1em; 
+} 
+.race { 
+  padding: 1em; 
+} 
+.race-details { 
+  padding-left: 2em; 
+} 
+.question { 
+  font-style: italic;  
+  font-weight: bold; 
+} 

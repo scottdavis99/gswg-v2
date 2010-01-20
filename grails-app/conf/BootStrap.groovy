@@ -63,6 +63,35 @@ class BootStrap {
              println reg.errors 
            }       
 
+           def burner = new Race( 
+                      name:"Barn Burner", 
+                      startDate:(new Date() + 120), 
+                      city:"Cary", 
+                      state:"NC", 
+                      distance:10.0, 
+                      cost:15.0, 
+                      maxRunners:350 
+                      ) 
+           burner.save() 
+           if(burner.hasErrors()){ 
+             println burner.errors 
+           }       
+
+           def chase = new Race( 
+                      name:"Race for the Chase", 
+                      startDate:(new Date() + 150), 
+                      city:"Duck", 
+                      state:"NC", 
+                      distance:5.0, 
+                      cost:25.0, 
+                      maxRunners:350 
+                      ) 
+           chase.save() 
+           if(chase.hasErrors()){ 
+             println chase.errors 
+           }
+
+
            break      
            
          case "production" : break

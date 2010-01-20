@@ -9,6 +9,8 @@ class Race {
 
   static hasMany = [registrations:Registration]
   
+  static searchable = true
+  
   static constraints = {
     name(blank:false, maxSize:50)
     startDate(validator: {return (it > new Date())})
