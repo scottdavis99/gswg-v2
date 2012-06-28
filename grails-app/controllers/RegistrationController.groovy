@@ -1,3 +1,3 @@
 class RegistrationController {
-  def scaffold = true
+    def scaffold = true
 }

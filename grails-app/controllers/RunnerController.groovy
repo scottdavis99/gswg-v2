@@ -1,3 +1,3 @@
 class RunnerController {
-  def scaffold = true
+    def scaffold = true
 }
