@@ -1,3 +1,5 @@
 target/**
 stacktrace.log
 .DS_Store
+*.iml
+.idea
